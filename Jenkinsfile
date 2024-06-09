@@ -42,7 +42,7 @@ pipeline{
             }
         }
 
-        stage("Install Dependencies"){
+        stage("TRIVY SCAN FILESYSTEM"){
             steps{
                 sh "trivy fs . > trivyFS.txt"
             }
